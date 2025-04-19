@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta tag -->
+    <title>Expense Analysis Results</title>
+</head>
+<body>
+    <h1>Expense Analysis Results</h1>
+    <h2>Categorized Expenses</h2>
+    {% for table in tables %}
+        <div>{{ table|safe }}</div>
+    {% endfor %}
+    <h2>Insights</h2>
+    <p>{{ insights }}</p>
+    <h2>Expense Chart</h2>
+    <img src="{{ url_for('static', filename='expense_chart.png') }}" alt="Expense Chart">
+</body>
+</html>

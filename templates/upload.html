@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag -->
+    <title>Upload CSV</title>
+</head>
+<body>
+    <h1>Upload your CSV file</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file-upload">Select a CSV file:</label> <!-- Added label -->
+        <input type="file" id="file-upload" name="file" accept=".csv" required title="Choose a CSV file" placeholder="Choose a file"> <!-- Added title and placeholder -->
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
